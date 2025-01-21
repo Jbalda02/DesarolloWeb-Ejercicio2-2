@@ -9,7 +9,7 @@ header {
     left: 0; /* Posicionamiento izquierdo */
     width: 200px; /* Ancho del menú */
     height: 100vh; /* Altura del menú (100% del viewport) */
-    background-color: #D6CFCD; /* Color de fondo del menú */
+    background-image:linear-gradient(#C8AD7E ,#ECE7CA); /* Color de fondo del menú */
     padding: 20px; /* Padding interno del menú */
 	flex:1;
     transition: all 0.3s ease; /* Animación de transición para suavizar los cambios */
@@ -18,6 +18,13 @@ header {
 h1 {
     text-align: center;
 	display:block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: #C8AD7E;
+    font-family: 'PT Serif';
+    font-style: italic;
 }
 
 nav ul {
@@ -25,6 +32,7 @@ nav ul {
     margin: 0;
     padding: 0;
     text-align: center;
+    color: #000;
 }
 
 nav a {
@@ -33,15 +41,15 @@ nav a {
 	display: block; /* Ocupa todo el ancho disponible */
     padding: 10px; /* Padding para cada enlace */
     text-decoration: none; /* Elimina la decoración por defecto */
-    color: #fff; /* Color del texto de los enlaces */
     transition: color 0.3s ease; /* Animación de transición para el color */
-
+    font-weight: bold;
 }
 
 main {
     padding: 20px;
 	display: inline;
 	flex:4;
+    background-image:linear-gradient(#C8AD7E,#F5F5DD);
 }
 
 section {
@@ -50,6 +58,7 @@ section {
 
 h2 {
     text-align: center;
+    font-family: 'PT serif';
 }
 
 table {
@@ -57,9 +66,15 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
-    border: 1px solid #ddd;
+th{
+    border: 1px solid #000;
     padding: 8px;
+    background-color: #C19A6B;
+} 
+td {
+    border: 1px solid #000;
+    padding: 8px;
+    background-color: #ECE7CA;
 }
 
 form {
@@ -79,4 +94,28 @@ textarea {
 
 .contenedor{
 	display:flex;
+}
+
+.footer-text{
+    position: sticky;
+    margin: 0px;
+    padding: 0px;
+    height: 20px;
+    background-color: #F5F5DD;
+}
+
+button {
+    background-color: #5D3A1A ;
+    color: white;
+    border: #000;
+    border-radius:15px;
+    padding: 10px;
+
+    min-width: 100%;
+    align-self: center;
+}
+button:hover {
+    background-color: #8B4513;
+    cursor: pointer;
+    
 }

@@ -8,7 +8,7 @@ header {
 	top: 20px; /* Posicionamiento superior */
     left: 0; /* Posicionamiento izquierdo */
     width: 200px; /* Ancho del menú */
-    height: 100vh; /* Altura del menú (100% del viewport) */
+    height: 1500px; /* Altura del menú (100% del viewport) */
     background-image:linear-gradient(#C8AD7E ,#ECE7CA); /* Color de fondo del menú */
     padding: 20px; /* Padding interno del menú */
 	flex:1;
@@ -75,6 +75,7 @@ td {
     border: 1px solid #000;
     padding: 8px;
     background-color: #ECE7CA;
+    align-items: center;
 }
 
 form {
@@ -84,14 +85,29 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
+    width: 90%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 300;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
+    border: none;
+    box-shadow: none;
+    border-bottom:2px solid #5D3A1A;
+    border-radius: 15px;
+    height: 30px;    
     width: 100%;
+    background-color: #DACAA4;
 }  
+textarea:focus{
+    border-bottom: 2px solid #8B4513;
+    outline: none;
 
+}
 .contenedor{
 	display:flex;
 }
@@ -99,7 +115,7 @@ textarea {
 .footer-text{
     position: sticky;
     margin: 0px;
-    padding: 0px;
+    padding: 10px;
     height: 20px;
     background-color: #F5F5DD;
 }
@@ -118,4 +134,12 @@ button:hover {
     background-color: #8B4513;
     cursor: pointer;
     
+}
+
+img{
+    max-width: 100px;
+    justify-self: center;
+}
+p{
+    font-size: x-large;
 }
